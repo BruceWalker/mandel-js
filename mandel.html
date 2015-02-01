@@ -1,0 +1,22 @@
+<html>
+<head><title>HTML5 Canvas Mandelbrot Fractal</title></head>
+<body>
+
+
+
+<canvas id="canvas1" width="800" height="600" onMouseDown = "controller.populateMin(event);" onMouseUp = "controller.populateMax(event);" onMouseDrag = "controller.populateMax(event);">
+This text is displayed if your browser does not support HTML5 Canvas.
+</canvas>
+<br/>
+    x min: <input type="text" id="xmin" value = -2.0 />
+    x max: <input type="text" id="xmax" value = 1.0 />
+    <br/>
+    y min: <input type="text" id="ymin" value = -1.0 />
+    y max: <input type="text" id="ymax" value = 1.0 />  
+    Max Iter: <input type="text" id="maxIter" value = 256 /> 
+    
+    <button name="Draw" onClick = "javascript:controller.draw();" >Draw</button>
+
+    <script type="text/javascript" src="controller.js"></script>
+</body>
+</html>
